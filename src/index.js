@@ -1,4 +1,5 @@
 import { Request } from "./request";
+import { UI } from "./ui";
 
 //Elementleri Ekleme
 const form = document.getElementById("employee-form");
@@ -9,6 +10,8 @@ const employeesList2 = document.querySelector("#employees");
 const updateButton = document.getElementById("update");
 
 const request = new Request("http://localhost:3000/employees");
+
+const ui = new UI();
 
 // request
 //     .get()
@@ -37,3 +40,19 @@ const request = new Request("http://localhost:3000/employees");
 //     .delete(5)
 //     .then((message) => console.log(message))
 //     .catch((err) => console.log("err :>> ", err));
+
+eventListeners();
+
+function eventListeners() {
+	document.addEventListener("DOMContentLoaded", getAllEmployees);
+}
+
+function getAllEmployees() {
+	//get fonksiyonundan arrayimizi alcaz
+	request
+		.get()
+		.then((employees) => {
+			ui.addAllEmployeesToUI(employees);
+		})
+		.catch((err) => console.log("err >> ", err));
+}
