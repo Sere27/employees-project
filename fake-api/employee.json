@@ -1,15 +1,22 @@
 {
-    "employees": [{
-            "name": "Serhat Erdem",
-            "department": "Bilişim",
-            "salary": "3000",
-            "id": 1
-        },
-        {
-            "name": "Mert Özgür",
-            "department": "Bilişim",
-            "salary": "4000",
-            "id": 2
-        }
-    ]
+  "employees": [
+    {
+      "name": "Mert Özgür",
+      "department": "Bilişim",
+      "salary": 4000,
+      "id": 2
+    },
+    {
+      "name": "Serhat Say",
+      "department": "Bilişim",
+      "salary": 2500,
+      "id": 6
+    },
+    {
+      "name": "Serhat Erdem",
+      "department": "Bilişim",
+      "salary": 2500,
+      "id": 7
+    }
+  ]
 }
