@@ -3,7 +3,7 @@
     {
       "name": "Mert Özgür",
       "department": "Bilişim",
-      "salary": 4000,
+      "salary": 3555,
       "id": 2
     },
     {
@@ -15,8 +15,14 @@
     {
       "name": "Serhat Erdem",
       "department": "Bilişim",
-      "salary": 2500,
+      "salary": 3500,
       "id": 7
+    },
+    {
+      "name": "Ümit",
+      "department": "yav",
+      "salary": 1500,
+      "id": 8
     }
   ]
 }
